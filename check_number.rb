@@ -19,12 +19,12 @@ class CheckNumber
 	end
 end
 
-CheckNumber.new.sum_digits(165532)
-CheckNumber.new.sum_digits(987)
-CheckNumber.new.sum_digits(9495968372)
-CheckNumber.new.sum_digits
-CheckNumber.new.sum_digits('thing')
-CheckNumber.new.sum_digits(true)
-CheckNumber.new.sum_digits({a: 'thing', ['b', 'c', 'd'] => 4 })
-
-describe
+# CheckNumber.new.sum_digits(165532)
+# CheckNumber.new.sum_digits(987)
+# CheckNumber.new.sum_digits(9495968372)
+# CheckNumber.new.sum_digits
+# CheckNumber.new.sum_digits('thing')
+# CheckNumber.new.sum_digits(true)
+# CheckNumber.new.sum_digits({a: 'thing', ['b', 'c', 'd'] => 4 })
+#
+# these were some test cases used when analyzing the feature and possible inputs
