@@ -1,13 +1,13 @@
 require 'rspec/autorun'
 require_relative './check_number'
 
-RSpec.configure do |config|
+RSpec.configure do |config| # a config file would handle this inside the framework to separate the responsibility from the spec file
 	config.formatter = :documentation
 end
 
 describe CheckNumber do
 	context "when checking an integer" do
-		let(:checker) { CheckNumber.new }
+		let(:checker) { CheckNumber.new } # this has to be refactored to use FactorybBot instances instead
 
 		it "return 7 when checking number 16" do
 			expect(checker.sum_digits(16)).to eql(7)
@@ -18,7 +18,7 @@ describe CheckNumber do
 		end
 	end
 
-	context "when checking a string" do
+	context "when checking a string" do # additional contexts would allow for a wider set of testing for the implementation
 		let(:checker) { CheckNumber.new }
 
 		it "return a message indicating the attribute is not an integer" do
@@ -42,3 +42,5 @@ describe CheckNumber do
 		end
 	end
 end
+
+# additional tests for edge cases need to be addressed
